@@ -25,5 +25,14 @@ create or replace package body pack2 is
                 return r;
             end f2;
         end;
- 
+   c
+declare
+    a programmer.pname%type:='Anand';
+    b software.title%type:='Read Me';
+    r software.pname%type;
+begin
+    pack1.p1(a);
+    r:=pack1.f1(b);
+    dbms_output.put_line('pname of given project:'||r);
+end;
 
