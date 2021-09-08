@@ -10,3 +10,11 @@ begin
         insert into circle values(t.radius,3.14*t.radius*t.radius,2*3.14*t.radius);
     end loop;
 end;
+//create table "radius"
+("radius number(3,2)")//
+insert into radius values(5);
+//create table "circle"
+("radius number (3,2)",
+"area" number(10,2),
+"perimeter" number(10,2)
+)//
